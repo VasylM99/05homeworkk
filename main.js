@@ -57,7 +57,6 @@ console.log(printDividedByFive);
 const getMedian = function median(...numbers) {
     let number = numbers.filter(num =>((parseFloat(num) - parseInt(num)===0)));
     let sort = number.sort((a,b) => a - b);
-    console.log('sort: ', sort);
     let median = [];
     if (numbers % 2 === 0){
         median = (sort[(sort.length/2)-1]+sort[sort.length/2])/2;
